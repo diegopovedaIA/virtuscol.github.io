@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Virtus Ventures S.A.S. — Inteligencia inmobiliaria y estrategia comercial</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="description" content="Análisis de mercado, estructuración de oportunidades y acompañamiento de negociación inmobiliaria y comercial en Bogotá, Colombia.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Figtree:wght@400;500;600&display=swap">
+<style>
+:root{--navy:#0E1B2E;--gold:#B08D57;--bg:#F4F5F7;--ink:#0E1B2E;--mut:#5B6676;--card:#fff;--line:#d6dbe1;--soft:#E6E9ED;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0A1424;--ink:#E6E9ED;--mut:#9AA5B5;--card:#101F35;--line:#26364d;--soft:#0E1B2E}}
+:root[data-theme="dark"]{--bg:#0A1424;--ink:#E6E9ED;--mut:#9AA5B5;--card:#101F35;--line:#26364d;--soft:#0E1B2E}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px;height:auto}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.7 Figtree,system-ui,sans-serif}
+h1,h2,h3,.serif{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;letter-spacing:.005em;margin:0}
+h2{font-size:clamp(2rem,4vw,2.9rem);line-height:1.1;margin-bottom:16px}
+h3{font-size:1.5rem;line-height:1.2}
+p{margin:0 0 14px;max-width:62ch}.mut{color:var(--mut)}
+.w{max-width:1120px;margin:0 auto;padding:0 24px}
+section{padding:96px 0}
+a{color:inherit}
+.lock{display:inline-flex;align-items:center;gap:.8em;text-decoration:none;--a:var(--c1);--b:var(--c2)}
+.lock svg{width:2.6em;height:2.6em}.a{fill:var(--a)}.b{fill:var(--b)}
+.lock .n{display:block;font:600 1.5em/1 'Cormorant Garamond',Georgia,serif;letter-spacing:.28em}
+.lock .s{display:block;font-size:.55em;letter-spacing:.45em;margin-top:.55em;font-weight:500}
+header{position:sticky;top:0;z-index:5;background:var(--navy);color:#FAFBFC;padding-top:env(safe-area-inset-top,0px)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:68px}
+nav{display:flex;gap:26px;font-size:.92rem}nav a{text-decoration:none;opacity:.85}nav a:hover{opacity:1;color:var(--gold)}
+@media(max-width:820px){nav a:not(.cta){display:none}}
+.btn{display:inline-block;padding:13px 26px;border:1px solid var(--gold);background:var(--gold);color:var(--navy);text-decoration:none;font-weight:600;font-size:.95rem}
+.btn:hover{background:transparent;color:var(--gold)}.btn.o{background:transparent;color:inherit;border-color:currentColor}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.hero{background:var(--navy);color:#FAFBFC;padding:120px 0 110px;position:relative;overflow:hidden}
+.hero svg.bg{position:absolute;right:-4%;top:0;height:100%;width:auto;opacity:.07}
+.hero h1{font-size:clamp(2.8rem,7vw,5.4rem);line-height:1.02;max-width:12ch}
+.hero h1 em{color:var(--gold);font-style:italic;display:block}
+.hero p{font-size:1.15rem;max-width:56ch;color:#C9D0DA;margin:28px 0 36px}
+.hero .btns{display:flex;gap:14px;flex-wrap:wrap}
+.vp{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+@media(max-width:820px){.vp{grid-template-columns:1fr;gap:24px}section{padding:72px 0}}
+.vp .big{font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.3}
+.svc{display:grid;gap:0;border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line);padding:26px 0}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;align-items:baseline}
+summary::-webkit-details-marker{display:none}
+summary h3{max-width:34ch}summary:after{content:"+";font:300 2rem/1 Figtree;color:var(--gold);transition:transform .2s}
+details[open] summary:after{transform:rotate(45deg)}
+.det{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;padding-top:22px}
+@media(max-width:820px){.det{grid-template-columns:1fr;gap:16px}}
+.det ul{margin:10px 0 0;padding-left:18px}.det li{margin-bottom:8px}
+.ent{border-left:2px solid var(--gold);padding-left:18px}.ent b{font-weight:600}
+.alt{background:var(--soft)}
+.steps{list-style:none;padding:0;margin:40px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:s}
+.steps li{padding:0 24px 0 0;border-top:2px solid var(--gold);padding-top:22px;counter-increment:s}
+.steps li:before{content:counter(s);font:500 2.6rem/1 'Cormorant Garamond',serif;color:var(--gold);display:block;margin-bottom:10px}
+@media(max-width:820px){.steps{grid-template-columns:1fr 1fr;gap:28px}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+.cl{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0;margin-top:32px;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.cl div{padding:26px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font:500 1.35rem/1.3 'Cormorant Garamond',serif}
+.props{background:var(--navy);color:#FAFBFC}.props .mut{color:#9AA5B5}
+.filt{display:flex;gap:10px;flex-wrap:wrap;margin:28px 0 36px}
+.filt button{background:transparent;border:1px solid #33445c;color:#C9D0DA;padding:9px 20px;font:500 .9rem Figtree,sans-serif;cursor:pointer}
+.filt button[aria-pressed=true]{border-color:var(--gold);color:var(--gold)}
+.pg{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:28px}
+.pc{background:#101F35;border:1px solid #223249;display:flex;flex-direction:column}
+.pc .im{aspect-ratio:4/3;position:relative;overflow:hidden}
+.pc .im svg{width:100%;height:100%;display:block}
+.pc .tag{position:absolute;left:14px;top:14px;background:var(--navy);color:var(--gold);font-size:.78rem;padding:4px 12px;border:1px solid var(--gold)}
+.pc .bd{padding:22px 24px 26px;display:flex;flex-direction:column;gap:6px;flex:1}
+.pc .loc{font-size:.88rem;color:#9AA5B5}
+.pc .pr{font:500 1.7rem/1.2 'Cormorant Garamond',serif;color:var(--gold);margin-top:6px}
+.pc .sp{display:flex;gap:18px;font-size:.88rem;color:#C9D0DA;padding:12px 0;border-top:1px solid #223249;margin-top:auto}
+.pc .ds{font-size:.9rem;color:#9AA5B5;margin:6px 0 10px;line-height:1.6}.pc .sp{flex-wrap:wrap;gap:8px 18px}.pc a{font-size:.92rem;color:var(--gold)}
+.note{font-size:.85rem;margin-top:28px}
+.ct{display:grid;grid-template-columns:1fr 1fr;gap:64px}
+@media(max-width:820px){.ct{grid-template-columns:1fr;gap:32px}}
+.ct dl{margin:0}.ct dt{font-size:.85rem;color:var(--mut);margin-top:18px}.ct dd{margin:2px 0 0;font:500 1.4rem/1.3 'Cormorant Garamond',serif}
+footer{background:var(--navy);color:#9AA5B5;padding:44px 0 56px;font-size:.9rem}
+footer .w{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+.pc .im img{width:100%;height:100%;object-fit:cover;display:block}
+.ph{all:unset;display:block;width:100%;height:100%;cursor:pointer;position:relative}
+.ph:focus-visible{outline:2px solid var(--gold);outline-offset:-4px}
+.ct2{position:absolute;right:14px;bottom:14px;background:rgba(14,27,46,.88);color:#FAFBFC;font-size:.8rem;padding:5px 12px}
+#lb{border:0;padding:0;background:transparent;max-width:100vw;max-height:100vh;width:100vw;height:100vh;color:#FAFBFC}
+#lb::backdrop{background:rgba(6,12,22,.94)}
+.lbw{height:100%;display:grid;grid-template-rows:1fr auto;padding:max(16px,env(safe-area-inset-top,0px)) 16px max(16px,env(safe-area-inset-bottom,0px))}
+.lbw img{max-width:100%;max-height:100%;margin:auto;object-fit:contain;min-height:0;width:100%;height:100%}
+.lbb{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:12px;font-size:.92rem}
+.lbb button{background:transparent;border:1px solid #33445c;color:#FAFBFC;padding:9px 18px;font:500 .9rem Figtree,sans-serif;cursor:pointer}
+.lbb button:hover{border-color:var(--gold);color:var(--gold)}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="m" viewBox="0 0 100 100"><polygon class="a" points="6,24 30,24 50,72 50,94"/><polygon class="b" points="50,94 50,72 70,4 94,4"/></symbol></defs></svg>
+
+<header><div class="w">
+<a class="lock" href="#inicio" style="font-size:11px;--c1:#FAFBFC;--c2:#B08D57" aria-label="Virtus Ventures, inicio"><svg><use href="#m"/></svg><span><span class="n">VIRTUS</span><span class="s">VENTURES S.A.S.</span></span></a>
+<nav aria-label="Principal"><a href="#servicios">Servicios</a><a href="#metodo">Cómo trabajamos</a><a href="#propiedades">Propiedades</a><a href="#contacto" class="cta">Contacto</a></nav></div></header>
+
+<div class="hero" id="inicio"><svg class="bg" viewBox="0 0 100 100" aria-hidden="true" style="--a:#fff;--b:#B08D57"><use href="#m"/></svg>
+<div class="w"><h1>Inteligencia para decidir.<em>Estrategia para crecer.</em></h1>
+<p>Acompañamos a propietarios, inversionistas, empresas y emprendedores en decisiones inmobiliarias y comerciales: análisis de mercado, estructuración de oportunidades y acompañamiento de negociación.</p>
+<div class="btns"><a class="btn" href="#contacto">Agendar una conversación</a><a class="btn o" href="#propiedades">Ver propiedades</a></div></div></div>
+
+<section><div class="w vp">
+<div><h2>Nuestra propuesta de valor</h2></div>
+<div><p class="serif big">Convertimos información en decisiones claras y ejecutables.</p>
+<p class="mut">Ayudamos a identificar oportunidades, evaluar su viabilidad y llevarlas a ejecución. Nuestro enfoque combina criterio comercial, conocimiento inmobiliario e inteligencia de mercado para respaldar cada decisión con información relevante.</p></div></div></section>
+
+<section class="alt" id="servicios"><div class="w">
+<h2>Servicios</h2><p class="mut" style="margin-bottom:40px">Cuatro líneas de trabajo, cada una con un entregable definido.</p>
+<div class="svc">
+<details open><summary><h3>Análisis de rentabilidad, valorización y demanda inmobiliaria</h3></summary><div class="det"><div><p>Evaluamos activos, zonas y oportunidades inmobiliarias antes de comprar, vender, arrendar o invertir.</p><ul><li>Estimación de valor comercial y análisis comparativo de mercado.</li><li>Evaluación de rentabilidad esperada y escenarios de ingreso.</li><li>Análisis de valorización, riesgos y comportamiento de la zona.</li><li>Identificación de demanda potencial por tipo de inmueble.</li><li>Recomendación estratégica de compra, venta, arriendo o inversión.</li></ul></div><div class="ent"><b>Entregable</b><p>Informe ejecutivo con hallazgos, escenarios y recomendación de decisión.</p></div></div></details>
+<details><summary><h3>Búsqueda, comercialización y negociación de inmuebles</h3></summary><div class="det"><div><p>Acompañamos a clientes que buscan adquirir, vender, arrendar o posicionar un activo inmobiliario.</p><ul><li>Definición del perfil del inmueble o comprador objetivo.</li><li>Búsqueda y preselección de oportunidades.</li><li>Preparación de estrategia comercial y materiales de presentación.</li><li>Apoyo en publicación, prospección y calificación de interesados.</li><li>Acompañamiento en negociación de precio, condiciones y estructura del negocio.</li></ul></div><div class="ent"><b>Entregable</b><p>Selección estratégica de opciones, plan comercial y acompañamiento hasta la negociación.</p></div></div></details>
+<details><summary><h3>Estructuración de negocios, alianzas e inversión</h3></summary><div class="det"><div><p>Diseñamos oportunidades comerciales e inmobiliarias para que puedan presentarse, negociarse y ejecutarse con claridad.</p><ul><li>Diseño del modelo de negocio.</li><li>Estructuración preliminar de la oportunidad de inversión.</li><li>Identificación de aliados estratégicos, compradores, operadores o inversionistas.</li><li>Construcción de propuesta de valor y narrativa comercial.</li><li>Definición de condiciones iniciales para negociación.</li></ul></div><div class="ent"><b>Entregable</b><p>Documento de oportunidad, modelo preliminar y hoja de ruta de estructuración.</p></div></div></details>
+<details><summary><h3>Inteligencia de mercado para decidir dónde abrir, invertir o expandirse</h3></summary><div class="det"><div><p>Ayudamos a empresas a elegir ubicaciones, sectores y oportunidades de expansión con una lectura comercial e inmobiliaria del territorio.</p><ul><li>Análisis de zonas, competencia, demanda y perfil de clientes.</li><li>Evaluación de ubicaciones para aperturas, relocalizaciones o expansión.</li><li>Identificación de sectores con potencial comercial o inmobiliario.</li><li>Análisis de señales de mercado y oportunidades emergentes.</li><li>Recomendación de prioridades, riesgos y próximos pasos.</li></ul></div><div class="ent"><b>Entregable</b><p>Mapa de oportunidad y recomendación de ubicación, inversión o expansión.</p></div></div></details>
+</div></div></section>
+
+<section id="metodo"><div class="w"><h2>Cómo trabajamos</h2>
+<ol class="steps"><li><h3>Entendemos</h3><p class="mut">La decisión, el objetivo y el contexto del cliente.</p></li><li><h3>Evaluamos</h3><p class="mut">Recopilamos información de mercado y comparamos las alternativas.</p></li><li><h3>Recomendamos</h3><p class="mut">Convertimos el análisis en una recomendación concreta.</p></li><li><h3>Acompañamos</h3><p class="mut">La estructuración, negociación o ejecución, según el alcance acordado.</p></li></ol>
+<h2 style="margin-top:88px">Clientes a quienes servimos</h2>
+<div class="cl"><div>Propietarios de inmuebles</div><div>Compradores y arrendatarios</div><div>Inversionistas individuales y familiares</div><div>Empresas en expansión</div><div>Emprendedores y desarrolladores de nuevos negocios</div><div>Aliados comerciales que buscan oportunidades inmobiliarias</div></div></div></section>
+
+<section class="props" id="propiedades"><div class="w">
+<h2>Propiedades en venta</h2>
+<p class="mut">Una selección reservada de inmuebles de alto valor. Para visitas, información completa o acceso a oportunidades fuera de mercado, escríbanos.</p>
+<div class="filt" role="group" aria-label="Filtrar por tipo"></div>
+<div class="pg" id="pg"></div>
+</div></section>
+
+<section id="contacto"><div class="w ct">
+<div><h2>Conversemos sobre su próxima decisión</h2><p class="mut">Cuéntenos qué quiere comprar, vender, invertir o abrir. Le responderemos con los siguientes pasos.</p>
+<div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:24px"><a class="btn" href="https://wa.me/573025066189?text=Hola%2C%20quiero%20conversar%20con%20Virtus%20Ventures." >Escribir por WhatsApp</a><a class="btn o" href="mailto:gerencia@virtuscol.com">Enviar un correo</a></div></div>
+<dl><dt>Ciudad</dt><dd>Bogotá, Colombia</dd><dt>Teléfono</dt><dd><a href="tel:+573202789695">320 278 9695</a></dd><dt>Correo</dt><dd><a href="mailto:gerencia@virtuscol.com">gerencia@virtuscol.com</a></dd><dt>Sitio web</dt><dd>www.virtuscol.com</dd></dl></div></section>
+
+<footer><div class="w"><a class="lock" href="#inicio" style="font-size:9px;--c1:#FAFBFC;--c2:#B08D57;color:#FAFBFC"><svg><use href="#m"/></svg><span><span class="n">VIRTUS</span><span class="s">VENTURES S.A.S.</span></span></a>
+<span>Inteligencia inmobiliaria. Estrategia comercial. Decisiones con visión.</span></div></footer>
+
+<dialog id="lb" aria-label="Galería de fotografías"><div class="lbw"><img id="lbi" alt=""><div class="lbb"><button id="lp" aria-label="Foto anterior">←</button><span id="lc" aria-live="polite"></span><button id="ln" aria-label="Foto siguiente">→</button><button id="lx">Cerrar</button></div></div></dialog>
+<script>
+const IMGS=[{"s": "img/casa-anapoima-iberia-01.jpg", "c": "Fachada y acceso"}, {"s": "img/casa-anapoima-iberia-02.jpg", "c": "Piscina y terraza posterior"}, {"s": "img/casa-anapoima-iberia-03.jpg", "c": "Piscina con cascada"}, {"s": "img/casa-anapoima-iberia-04.jpg", "c": "Jardín y zona de descanso"}, {"s": "img/casa-anapoima-iberia-05.jpg", "c": "Sala y comedor con vista a la piscina"}, {"s": "img/casa-anapoima-iberia-06.jpg", "c": "Sala, comedor y cocina integrados"}, {"s": "img/casa-anapoima-iberia-07.jpg", "c": "Cocina con barra"}, {"s": "img/casa-anapoima-iberia-08.jpg", "c": "Zonas sociales y ascensor"}, {"s": "img/casa-anapoima-iberia-09.jpg", "c": "Escalera y ascensor, segundo nivel"}, {"s": "img/casa-anapoima-iberia-10.jpg", "c": "Ascensor interno"}, {"s": "img/casa-anapoima-iberia-11.jpg", "c": "Sala de estar"}, {"s": "img/casa-anapoima-iberia-12.jpg", "c": "Alcoba principal con balcón"}, {"s": "img/casa-anapoima-iberia-13.jpg", "c": "Alcoba con balcón"}, {"s": "img/casa-anapoima-iberia-14.jpg", "c": "Alcoba con balcón"}, {"s": "img/casa-anapoima-iberia-15.jpg", "c": "Baño"}, {"s": "img/casa-anapoima-iberia-16.jpg", "c": "Terraza social con cocina y zona BBQ"}, {"s": "img/casa-anapoima-iberia-17.jpg", "c": "Terraza con vista"}, {"s": "img/casa-anapoima-iberia-18.jpg", "c": "Zona de sauna"}, {"s": "img/casa-anapoima-iberia-19.jpg", "c": "Ascensor y terraza con vista a la montaña"}, {"s": "img/casa-anapoima-iberia-20.jpg", "c": "Fachada"}];
+const IMGS2=[{"s": "img/duplex-santa-barbara-01.jpg", "c": "Sala y comedor"}, {"s": "img/duplex-santa-barbara-02.jpg", "c": "Sala y comedor"}, {"s": "img/duplex-santa-barbara-03.jpg", "c": "Zonas sociales integradas"}, {"s": "img/duplex-santa-barbara-04.jpg", "c": "Sala de proyección y zona de estar"}, {"s": "img/duplex-santa-barbara-05.jpg", "c": "Sala de proyección"}, {"s": "img/duplex-santa-barbara-06.jpg", "c": "Cocina tipo pasillo"}, {"s": "img/duplex-santa-barbara-07.jpg", "c": "Cocina con estufa a gas y campana"}, {"s": "img/duplex-santa-barbara-08.jpg", "c": "Cocina con horno y nevera de acero"}, {"s": "img/duplex-santa-barbara-09.jpg", "c": "Cocina con mesón en granito"}, {"s": "img/duplex-santa-barbara-10.jpg", "c": "Hall del segundo nivel"}, {"s": "img/duplex-santa-barbara-11.jpg", "c": "Escalera y hall del segundo nivel"}, {"s": "img/duplex-santa-barbara-12.jpg", "c": "Alcoba principal"}, {"s": "img/duplex-santa-barbara-13.jpg", "c": "Alcoba principal con clóset empotrado"}, {"s": "img/duplex-santa-barbara-14.jpg", "c": "Alcoba principal"}, {"s": "img/duplex-santa-barbara-15.jpg", "c": "Alcoba"}, {"s": "img/duplex-santa-barbara-16.jpg", "c": "Alcoba o estudio"}, {"s": "img/duplex-santa-barbara-17.jpg", "c": "Baño con tina y ducha"}, {"s": "img/duplex-santa-barbara-18.jpg", "c": "Baño con ducha en vidrio"}, {"s": "img/duplex-santa-barbara-19.jpg", "c": "Baño"}, {"s": "img/duplex-santa-barbara-20.jpg", "c": "Terraza"}];
+const IMGS3=[{"s": "img/apto-santa-barbara-centro-01.jpg", "c": "Sala amplia con vista exterior"}, {"s": "img/apto-santa-barbara-centro-02.jpg", "c": "Comedor"}, {"s": "img/apto-santa-barbara-centro-03.jpg", "c": "Cocina"}, {"s": "img/apto-santa-barbara-centro-04.jpg", "c": "Cocina y zona de ropas"}, {"s": "img/apto-santa-barbara-centro-05.jpg", "c": "Estudio"}, {"s": "img/apto-santa-barbara-centro-06.jpg", "c": "Estudio con biblioteca"}, {"s": "img/apto-santa-barbara-centro-07.jpg", "c": "Alcoba principal"}, {"s": "img/apto-santa-barbara-centro-08.jpg", "c": "Vestier y baño de la alcoba principal"}, {"s": "img/apto-santa-barbara-centro-09.jpg", "c": "Alcoba"}, {"s": "img/apto-santa-barbara-centro-10.jpg", "c": "Alcoba"}, {"s": "img/apto-santa-barbara-centro-11.jpg", "c": "Baño"}, {"s": "img/apto-santa-barbara-centro-12.jpg", "c": "Baño"}, {"s": "img/apto-santa-barbara-centro-13.jpg", "c": "Hall de acceso al piso"}, {"s": "img/apto-santa-barbara-centro-14.jpg", "c": "Lobby del edificio"}, {"s": "img/apto-santa-barbara-centro-15.jpg", "c": "Zonas comunes"}, {"s": "img/apto-santa-barbara-centro-16.jpg", "c": "Zonas comunes"}, {"s": "img/apto-santa-barbara-centro-17.jpg", "c": "Parqueadero y depósito"}];
+const P=[
+{t:"Casa",n:"Casa de lujo en Iberia con ascensor",l:"Anapoima, sector Iberia, Cundinamarca",p:1100e6,a:324,h:4,b:5,g:2,x:["Lote 420 m²","Estrato 5","Admón. $ 522.000"],d:"Tres niveles con ascensor, piscina privada con cascada, terraza social con jacuzzi para 8 personas, sauna y zona BBQ. Dentro de un condominio con dos piscinas (una semiolímpica), zonas húmedas y amplias zonas verdes. Construcción de 0 a 5 años."},
+{t:"Apartamento",n:"Dúplex remodelado en Santa Bárbara",l:"Santa Bárbara, Usaquén, Bogotá",p:830e6,a:141,h:3,b:4,g:2,x:["Terraza 25 m²","Estrato 6","Admón. $ 600.000"],d:"Dúplex totalmente remodelado, con sala, comedor, estudio y sala de proyección. Tres alcobas en el segundo nivel, la principal con baño, y terraza de 25 m². Dos parqueaderos en línea y depósitos interno y externo."},
+{t:"Apartamento",n:"Apartamento exterior con estudio y ascensor directo",l:"Santa Bárbara Centro, Bogotá",p:930e6,a:135,h:3,b:3,g:2,x:["Piso 2","Estudio","Sala de TV","Admón. $ 768.000"],d:"Apartamento exterior en segundo piso, con ascensor directo al apartamento. Sala amplia, comedor, estudio, tres alcobas y sala de televisión. Dos parqueaderos."}
+];
+P[0].im=IMGS;P[1].im=IMGS2;P[2].im=IMGS3;
+const cop=v=>"$ "+new Intl.NumberFormat("es-CO").format(v/1e6)+" millones";
+const art=(t,i)=>{const c=["#1A2D49","#16273F","#22364F"][i%3];let s=`<rect width="400" height="300" fill="${c}"/><rect y="230" width="400" height="70" fill="#0E1B2E"/>`;
+if(t=="Casa")s+=`<polygon points="90,230 90,150 200,90 310,150 310,230" fill="#2C4262"/><polygon points="70,155 200,80 330,155" fill="#B08D57" opacity=".85"/><rect x="180" y="170" width="40" height="60" fill="#0E1B2E"/><rect x="110" y="170" width="40" height="34" fill="#B08D57" opacity=".4"/><rect x="250" y="170" width="40" height="34" fill="#B08D57" opacity=".4"/>`;
+else if(t=="Lote")s+=`<polygon points="40,230 140,170 360,170 380,230" fill="#2C4262"/><polyline points="140,170 200,230 M360,170 300,230" stroke="#B08D57" stroke-width="2" fill="none"/><polygon points="40,230 140,170 360,170 380,230" fill="none" stroke="#B08D57" stroke-width="2" stroke-dasharray="6 6"/>`;
+else{const w=t=="Oficina"?[[60,60],[150,100],[250,140]]:[[110,70],[200,110],[270,150]];s+=[[70,50,70,180],[160,20,90,210],[270,90,70,140]].map(([x,y,wd,h],k)=>`<rect x="${x}" y="${y}" width="${wd}" height="${h}" fill="${k==1?"#2C4262":"#243852"}"/>`+Array.from({length:Math.floor(h/28)},(_,r)=>Array.from({length:Math.floor(wd/22)},(_,q)=>`<rect x="${x+8+q*22}" y="${y+10+r*28}" width="10" height="14" fill="#B08D57" opacity="${(r*3+q+k)%4?".25":".6"}"/>`).join("")).join("")).join("")}
+return`<svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustración de ${t.toLowerCase()}">${s}</svg>`};
+const types=["Todos",...new Set(P.map(x=>x.t))],F=document.querySelector(".filt"),G=document.getElementById("pg");
+function draw(f){G.innerHTML=P.map((x,i)=>({x,i})).filter(o=>f=="Todos"||o.x.t==f).map(({x,i})=>{
+const sp=[x.a?`${new Intl.NumberFormat("es-CO").format(x.a)} m²`:"",x.h?`${x.h} hab.`:"",x.b?`${x.b} baños`:"",x.g?`${x.g} parq.`:"",...(x.x||[])].filter(Boolean).map(s=>`<span>${s}</span>`).join("");
+return`<article class="pc"><div class="im">${x.im?`<button class="ph" data-i="${i}" aria-label="Ver ${x.im.length} fotografías de ${x.n}"><img loading="lazy" decoding="async" src="${x.im[0].s}" alt="${x.im[0].c}"><span class="ct2">Ver ${x.im.length} fotos</span></button>`:art(x.t,i)}<span class="tag">${x.t}</span></div><div class="bd"><h3>${x.n}</h3><div class="loc">${x.l}</div><div class="pr">${x.p?cop(x.p):"Precio a consultar"}</div>${x.d?`<p class="ds">${x.d}</p>`:""}<div class="sp">${sp}</div><a href="https://wa.me/573025066189?text=${encodeURIComponent("Hola, me interesa: "+x.n+" ("+x.l+").")}">Solicitar información</a></div></article>`}).join("")}
+F.innerHTML=types.map((t,i)=>`<button aria-pressed="${i==0}">${t=="Todos"?t:t+"s"}</button>`).join("");
+F.onclick=e=>{const b=e.target.closest("button");if(!b)return;F.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x==b));draw(types[[...F.children].indexOf(b)])};
+draw("Todos");
+const LB=document.getElementById("lb");let cur=0;
+let pi=0;const show=k=>{const im=P[pi].im;cur=(k+im.length)%im.length;document.getElementById("lbi").src=im[cur].s;document.getElementById("lbi").alt=im[cur].c;document.getElementById("lc").textContent=im[cur].c+" · "+(cur+1)+" / "+im.length};
+G.addEventListener("click",e=>{const b=e.target.closest(".ph");if(!b)return;pi=+b.dataset.i;show(0);LB.showModal()});
+document.getElementById("lp").onclick=()=>show(cur-1);document.getElementById("ln").onclick=()=>show(cur+1);document.getElementById("lx").onclick=()=>LB.close();
+LB.addEventListener("keydown",e=>{if(e.key=="ArrowLeft")show(cur-1);if(e.key=="ArrowRight")show(cur+1)});
+LB.addEventListener("click",e=>{if(e.target==LB)LB.close()});
+</script>
+</body></html>

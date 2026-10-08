@@ -1,0 +1,19 @@
+VIRTUS VENTURES S.A.S. - SITIO WEB
+
+Contenido:
+  index.html     Página principal (todo el sitio)
+  img/           Fotografías de las propiedades
+  favicon.svg    Ícono del sitio
+  robots.txt     Permite que los buscadores indexen el sitio
+
+Cómo publicarlo:
+  1. Entre al panel de su hosting (cPanel, Plesk, etc.) o conéctese por FTP.
+  2. Abra la carpeta raíz del dominio (public_html, www o htdocs).
+  3. Suba index.html, favicon.svg, robots.txt y la carpeta img completa.
+  4. Abra www.virtuscol.com y verifique.
+
+Notas:
+  - Es un sitio estático: no requiere PHP, base de datos ni configuración.
+  - Mantenga la carpeta img junto a index.html; las fotos se cargan desde ahí.
+  - Las tipografías se cargan desde Google Fonts (requiere internet).
+  - Para cambiar precios, textos o propiedades, edite index.html.
